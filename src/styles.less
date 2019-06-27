@@ -5,9 +5,39 @@
 //@import "../node_modules/bootstrap/scss/_card.scss";
 
 body {
-  background: #010301 url('assets/ac.jpeg') no-repeat;
-  background-size: 2000px;
+  //background: #010301 url('assets/wood.jpg') no-repeat;
+
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-image: radial-gradient( #222223 ,black);
+ // height: 1000px;
+
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+
+    border-radius: 1px;
+
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:#222223;
+    border-radius: 10px;
+    margin: 1px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: pink ;
+  }
 }
+
 
 .trx {
   background-color: rgba(255,255,255,0.1);

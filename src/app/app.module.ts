@@ -17,6 +17,21 @@ import { BoksComponent } from './boks/boks.component';
 import { DeAdminPanelComponent } from './de-admin-panel/de-admin-panel.component';
 import {HttpClientModule} from "@angular/common/http";
 import { DeLoginComponent } from './de-login/de-login.component';
+import { HasloComponent } from './haslo/haslo.component';
+import { ZalogowanyComponent } from './zalogowany/zalogowany.component';
+
+import { RouterModule, Routes} from '@angular/router';
+
+const appRoutes: Routes=[
+  {
+    path:'',
+    component: HasloComponent
+  },
+  {
+    path:'zalogowany',
+    component: ZalogowanyComponent
+  }
+];
 
 @NgModule({
   declarations: [
@@ -32,9 +47,12 @@ import { DeLoginComponent } from './de-login/de-login.component';
     HalaComponent,
     BoksComponent,
     DeAdminPanelComponent,
-    DeLoginComponent
+    DeLoginComponent,
+    HasloComponent,
+    ZalogowanyComponent
   ],
   imports: [
+    RouterModule.forRoot(appRoutes),
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,

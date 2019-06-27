@@ -1,0 +1,49 @@
+
+<div class="row">
+
+  <div class="col-md-4">
+    <div class=" trx mt-4 full_transparent">
+      <div class="card-header text-center h5 part_transparent"> SIGN IN</div>
+      <div class="card-body part_transparent">
+        <img src="assets/user.png" alt="user" class="center" style="width:150px;height:auto ">
+
+        <form (submit)="LoginUser($event)">
+          <div class="form-group mt-6 text-center">
+
+            <input type="text"  class="form-control less_transparent text-white mt-4"
+                    placeholder="alias">
+          </div>
+          <div class="form-group mt-4 text-center">
+
+          <input type="password" class="form-control less_transparent text-white"
+                  placeholder="password">
+          </div>
+
+
+            <div class="text-center" >
+              <button type="submit" class="btn  {{y}}">LOG IN</button>
+            </div>
+
+
+          <div class="form-group mt-4 text-center">
+
+            <input type="password" class="form-control less_transparent text-white"
+                    placeholder="newpassword">
+          </div>
+
+
+          <div class="text-center">
+            <button type="submit" class="btn btn-outline-warning">CHANGE P</button>
+          </div>
+
+        </form>
+
+      </div>
+      <div class="card-footer part_transparent"></div>
+    </div>
+
+
+  </div>
+  <div class="col-md-4"></div>
+
+</div>
