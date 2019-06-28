@@ -7,36 +7,37 @@
       <div class="card-body part_transparent">
         <img src="assets/user.png" alt="user" class="center" style="width:150px;height:auto ">
 
-        <form (submit)="LoginUser($event)">
+<!--        <form (submit)="loginUser($event)">-->
+<!--        <form>-->
           <div class="form-group mt-6 text-center">
 
             <input type="text"  class="form-control less_transparent text-white mt-4"
-                    placeholder="alias">
+                    placeholder="alias" [(ngModel)]="login">
           </div>
           <div class="form-group mt-4 text-center">
 
           <input type="password" class="form-control less_transparent text-white"
-                  placeholder="password">
+                  placeholder="password" [(ngModel)]="a">
           </div>
 
 
             <div class="text-center" >
-              <button type="submit" class="btn  {{y}}">LOG IN</button>
+              <button (click)="loginUser()" type="submit" class="btn  {{y}}">LOG IN</button>
             </div>
 
 
           <div class="form-group mt-4 text-center">
 
             <input type="password" class="form-control less_transparent text-white"
-                    placeholder="newpassword">
+                    placeholder="newpassword" [(ngModel)]="b">
           </div>
 
 
           <div class="text-center">
-            <button type="submit" class="btn btn-outline-warning">CHANGE P</button>
+            <button type="submit" (click)="changeP()" class="btn {{s}}">CHANGE P</button>
           </div>
 
-        </form>
+<!--        </form>-->
 
       </div>
       <div class="card-footer part_transparent"></div>
